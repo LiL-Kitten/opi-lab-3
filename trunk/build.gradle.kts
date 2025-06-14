@@ -36,24 +36,43 @@ tasks.test {
     }
 }
 
-//native2ascii: конвертация ресурсов .properties в ASCII-формат
+////native2ascii: конвертация ресурсов .properties в ASCII-формат
+//tasks.register<Copy>("native2ascii") {
+//    val native2ascii = Native2AsciiFilter()
+//    from("src/main/resources") {
+//        include("**/*.properties")
+//    }
+//    filter { line -> native2ascii.filter(line) }
+//    into("ascii_resources")
+//    doFirst { project.mkdir(project.file("ascii_resources")) }
+//}
+// native2ascii: конвертация ресурсов .properties в ASCII-формат
 tasks.register<Copy>("native2ascii") {
-    val native2ascii = Native2AsciiFilter()
     from("src/main/resources") {
         include("**/*.properties")
+        filter<Native2AsciiFilter>()  // <-- вот так правильно!
     }
-    filter { line -> native2ascii.filter(line) }
     into("ascii_resources")
-    doFirst { project.mkdir(project.file("ascii_resources")) }
+    doFirst {
+        project.mkdir("ascii_resources")
+    }
 }
 
+
 // Процесс обработки(сначала native2ascii, затем копирование как ASCII-ресурсов)
+//tasks.named<ProcessResources>("processResources") {
+//    dependsOn("native2ascii")
+//    from("ascii_resources") {
+//        include("**/*.properties")
+//    }
+//}
 tasks.named<ProcessResources>("processResources") {
     dependsOn("native2ascii")
     from("ascii_resources") {
         include("**/*.properties")
     }
 }
+
 
 // build (включает compileJava и processResources, упаковывает в jar и затем report)
 tasks.register<Jar>("buildJar") {
