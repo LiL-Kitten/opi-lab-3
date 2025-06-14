@@ -8,16 +8,6 @@ repositories {
     mavenCentral()
 }
 
-// Параметры проекта выносятся в gradle.properties
-// Пример gradle.properties:
-// javaVersion=17
-// jpaVersion=3.0.2
-// primefacesVersion=10.0
-// postgresqlVersion=42.2.5
-// servletVersion=5.0.0
-// jakartaeeVersion=9.0.0
-// junitVersion=5.8.2
-
 group = "stars"
 version = "1"
 description = "lab-2"
@@ -80,19 +70,19 @@ tasks.register<Jar>("buildJar") {
     archiveVersion.set(project.version.toString())
 }
 
-tasks.register("build") {
+tasks.register("my_build") {
     dependsOn("buildJar")
     finalizedBy("report")
 }
 
 //report (после успешного тестирования сохраняет отчеты и коммитит в SVN)
-tasks.register("report") {
+tasks.register<Exec>("report") {
     dependsOn(tasks.test)
     doLast {
-        val reportDir = file("${project.buildDir}/test-results/test")
+        val reportDir = file("build/test-results/test")
         if (reportDir.exists()) {
-            exec { commandLine("svn", "add", "--force", reportDir.absolutePath) }
-            exec { commandLine("svn", "commit", "-m", "Add JUnit test reports: version ${project.version}") }
+             commandLine("svn", "add", "--force", reportDir.absolutePath)
+             commandLine("svn", "commit", "-m", "Add JUnit test reports: version ${project.version}")
         } else {
             logger.lifecycle("No test report directory found at: $reportDir")
         }
