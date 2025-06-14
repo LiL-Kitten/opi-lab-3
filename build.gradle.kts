@@ -76,13 +76,13 @@ tasks.register("my_build") {
 }
 
 //report (после успешного тестирования сохраняет отчеты и коммитит в SVN)
-tasks.register<Exec>("report") {
+tasks.register("report") {
     dependsOn(tasks.test)
     doLast {
-        val reportDir = file("build/test-results/test")
+        val reportDir = file("${project.buildDir}/test-results/test")
         if (reportDir.exists()) {
-             commandLine("svn", "add", "--force", reportDir.absolutePath)
-             commandLine("svn", "commit", "-m", "Add JUnit test reports: version ${project.version}")
+            exec { commandLine("svn", "add", "--force", reportDir.absolutePath) }
+            exec { commandLine("svn", "commit", "-m", "Add JUnit test reports: version ${project.version}") }
         } else {
             logger.lifecycle("No test report directory found at: $reportDir")
         }
