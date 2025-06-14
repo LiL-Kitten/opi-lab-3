@@ -51,13 +51,17 @@ tasks.test {
 tasks.register<Copy>("native2ascii") {
     from("src/main/resources") {
         include("**/*.properties")
-        filter<Native2AsciiFilter>()  // <-- вот так правильно!
+        filter(
+            mapOf("encoding" to "UTF-8"),
+            Native2AsciiFilter::class.java
+        )
     }
     into("ascii_resources")
     doFirst {
         project.mkdir("ascii_resources")
     }
 }
+
 
 
 // Процесс обработки(сначала native2ascii, затем копирование как ASCII-ресурсов)
