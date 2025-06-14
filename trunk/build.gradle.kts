@@ -2,6 +2,7 @@ import org.apache.tools.ant.filters.Native2AsciiFilter
 
 plugins {
     java
+    war
 }
 
 repositories {
