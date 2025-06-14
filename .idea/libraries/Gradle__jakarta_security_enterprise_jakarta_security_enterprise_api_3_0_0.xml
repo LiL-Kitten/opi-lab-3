@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: jakarta.security.enterprise:jakarta.security.enterprise-api:3.0.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="jakarta.security.enterprise" artifactId="jakarta.security.enterprise-api" version="3.0.0" baseVersion="3.0.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.security.enterprise/jakarta.security.enterprise-api/3.0.0/ca9d8039c16db579b7d45813015c8d677105bc0f/jakarta.security.enterprise-api-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

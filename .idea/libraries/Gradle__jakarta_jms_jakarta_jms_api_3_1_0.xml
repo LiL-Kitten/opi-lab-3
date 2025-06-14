@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: jakarta.jms:jakarta.jms-api:3.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="jakarta.jms" artifactId="jakarta.jms-api" version="3.1.0" baseVersion="3.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.jms/jakarta.jms-api/3.1.0/e194cf91a3f908e4846542849ac11a8e0b3c68ad/jakarta.jms-api-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
