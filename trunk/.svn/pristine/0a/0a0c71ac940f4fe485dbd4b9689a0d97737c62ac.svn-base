@@ -1,0 +1,44 @@
+<changelist name="Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]" date="1749924878874" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 14.06.2025, 21:14 [Changes]" />
+  <binary>
+    <option name="AFTER_PATH" value=".gradle/8.14/executionHistory/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/executionHistory.bin" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/classes/java/test/cringe/lab3/PointTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/PointTest.class" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/libs/lab-2-1.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/lab-2-1.jar" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/libs/lab-2-1.war" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/lab-2-1.war" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/outputFiles.bin" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/test-results/test/binary/output.bin.idx" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/output.bin.idx" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/test-results/test/binary/results.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/results.bin" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value=".gradle/8.14/fileHashes/resourceHashesCache.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/resourceHashesCache.bin" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/tmp/compileTestJava/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/previous-compilation-data.bin" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="build/tmp/compileJava/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_06_2025,_21_14_[Changes]/previous-compilation-data1.bin" />
+  </binary>
+</changelist>
