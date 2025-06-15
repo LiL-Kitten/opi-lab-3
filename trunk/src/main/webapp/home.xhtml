@@ -7,12 +7,14 @@
     <h:outputStylesheet library="css" name="main.css"/>
 </h:head>
 
-<f:view>
+<f:view locale="#{localeChanger.locale}">
     <h:body>
         <h:panelGroup styleClass="fio" value="#{msg.authors}">
             <h:outputText value="#{msg.authors}"/>
             <br/> <br/>
             <h:outputText value="#{msg.info}"/>
+
+
         </h:panelGroup>
 
         <h:panelGroup styleClass="main">
@@ -24,7 +26,19 @@
             </h:form>
 
             <h:outputText value="#{msg.greeting}"/>
+
+            <h:form>
+                <button class="lang-btn">
+                    <h:commandLink action="#{localeChanger.setEnglish}" value="English" immediate="true"/>
+                </button>
+
+                <button class="lang-btn">
+                    <h:commandLink action="#{localeChanger.setRussian}" value="Русский" immediate="true"/>
+                </button>
+            </h:form>
         </h:panelGroup>
+
+
     </h:body>
 </f:view>
 

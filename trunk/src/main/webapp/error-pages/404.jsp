@@ -1,10 +1,29 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<fmt:setBundle basename="messages" var="msg"/>
+<fmt:setLocale value="${userLocale}" />
+<fmt:setBundle basename="messages" var="msg" />
 
-<c:set var="titleKey" value="error404title"/>
-<c:set var="messageKey" value="error404message"/>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/error.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
+    <title><fmt:message key="error.404.title" bundle="${msg}" /></title>
+</head>
+<body>
+<header>
+    <h1><fmt:message key="error.404.title" bundle="${msg}" /></h1>
+</header>
 
-<jsp:include page="error.jsp"/>
+<main>
+    <div class="error-content">
+        <p><fmt:message key="error.404.message" bundle="${msg}" /></p>
+        <a href="${pageContext.request.contextPath}/home.xhtml">
+            <fmt:message key="error.homeLink" bundle="${msg}" />
+        </a>
+    </div>
+</main>
+</body>
+</html>

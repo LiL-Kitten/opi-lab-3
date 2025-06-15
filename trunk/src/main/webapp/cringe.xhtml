@@ -36,12 +36,14 @@
             <h:form id="formId">
 
                 <!-- Значение X -->
-                <h:outputLabel styleClass="mini-title" value="Значение X"/>
+                <h:outputText styleClass="mini-title" value="#{msg.x}"/>
+                <!--                <h:outputLabel styleClass="mini-title" value="Значение X"/>-->
                 <div class="block-x">
                     <ui:repeat value="#{checkbox.values}" var="value" varStatus="status">
                         <h:outputLabel styleClass="label-checkbox">
                             <h:selectBooleanCheckbox value="#{checkbox.checkBoxes[value]}"
-                                                     onchange="changeStyle(this)" onclick="#{checkbox.selectCheckBox(value)}"/>
+                                                     onchange="changeStyle(this)"
+                                                     onclick="#{checkbox.selectCheckBox(value)}"/>
                             #{value}
                         </h:outputLabel>
                     </ui:repeat>
@@ -50,7 +52,8 @@
 
                 <!-- Значение Y -->
                 <div class="block-y">
-                    <h:outputLabel styleClass="mini-title" value="Значение Y"/>
+                    <h:outputText styleClass="mini-title" value="#{msg.y}"/>
+                    <!--                    <h:outputLabel styleClass="mini-title" value="Значение Y"/>-->
                     <br/>
                     <h:inputHidden id="hiddenY" value="#{coordinateHandler.y}"/>
                     <h:inputText id="valueY" styleClass="value-y" maxlength="7" label="от -3 до 3"
@@ -59,7 +62,8 @@
 
                 <!-- Значение R -->
                 <div class="block-r">
-                    <h:outputLabel styleClass="mini-title" value="Значение R"/>
+                    <h:outputText styleClass="mini-title" value="#{msg.r}"/>
+                    <!--                    <h:outputLabel styleClass="mini-title" value="Значение R"/>-->
                     <br/>
                     <h:inputHidden id="hiddenR" value="#{coordinateHandler.r}"/>
                     <p:slider styleClass="slider" minValue="2" maxValue="5" step="0.25" for="hiddenR"
@@ -78,9 +82,9 @@
                     </h:commandButton>
 
                     <h:commandButton styleClass="result" action="#{controller.save()}"
-                                      onclick="return handleSubmit()" type="submit">
+                                     onclick="return handleSubmit()" type="submit">
                         <f:ajax execute="@form" render=":history"
-                                onevent="handleAjaxEvent" />
+                                onevent="handleAjaxEvent"/>
                     </h:commandButton>
                 </div>
 
@@ -88,12 +92,12 @@
 
 
             <!-- График -->
-                <div class="myImg">
-                    <!--добавить функцию для отправки-->
-                    <svg class="mySvg"  width="400" height="400" style="border-radius: 15px;">
-                        <image href="resources/img/graph.svg" width="400" height="400"/>
-                    </svg>
-                </div>
+            <div class="myImg">
+                <!--добавить функцию для отправки-->
+                <svg class="mySvg" width="400" height="400" style="border-radius: 15px;">
+                    <image href="resources/img/graph.svg" width="400" height="400"/>
+                </svg>
+            </div>
 
             <h:form styleClass="get-home">
                 <h:commandLink action="#{navigate.goToHome}" styleClass="home"/>
@@ -118,22 +122,26 @@
                         #{point.r}
                     </h:column>
                     <h:column>
-                        <f:facet name="header">Время выполнения</f:facet>
+                        <f:facet name="header"> exec time </f:facet>
                         #{point.time} nanoseconds
                     </h:column>
                     <h:column>
-                        <f:facet name="header">Дата</f:facet>
+                        <f:facet name="header"> time </f:facet>
                         #{point.date}
                     </h:column>
                     <h:column>
-                        <f:facet name="header">Результат</f:facet>
+                        <f:facet name="header"> result </f:facet>
                         #{point.condition}
                     </h:column>
                 </h:dataTable>
 
                 <!-- Сообщение, если нет данных -->
-                <h:outputText styleClass="main" value="Нет данных для отображения. Потыкайте кнопочки"
-                              rendered="#{empty controller.points}" />
+                <!--                <h:outputText styleClass="main" value="Нет данных для отображения. Потыкайте кнопочки"-->
+                <!--                              rendered="#{empty controller.points}" />-->
+
+                <h:outputText styleClass="main" value="#{msg.pusto}"
+                              rendered="#{empty controller.points}"/>
+
             </div>
         </h:panelGroup>
         <h:messages/>
