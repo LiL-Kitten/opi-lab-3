@@ -1,13 +1,10 @@
-<%@ taglib prefix="c" uri="https://jakarta.ee/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="https://jakarta.ee/jsp/jstl/fmt" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<fmt:setLocale value="${pageContext.request.locale}" />
-<fmt:setBundle basename="messages" var="msg" />
+<fmt:setBundle basename="messages" var="msg"/>
 
-<fmt:message key="error404title" bundle="${msg}" var="title" />
-<fmt:message key="error404message" bundle="${msg}" var="message" />
+<c:set var="titleKey" value="error404title"/>
+<c:set var="messageKey" value="error404message"/>
 
-<jsp:include page="error.jsp">
-    <jsp:param name="title" value="${title}" />
-    <jsp:param name="message" value="${message}" />
-</jsp:include>
+<jsp:include page="error.jsp"/>

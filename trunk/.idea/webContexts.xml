@@ -4,6 +4,7 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/cringe.xhtml" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/error-pages/error.jsp" value="file://$PROJECT_DIR$/src/main/webapp/error-pages" />
       </map>
     </option>
   </component>
