@@ -20,7 +20,7 @@ java {
 }
 
 dependencies {
-    implementation("javax.servlet:jstl:1.2")
+    implementation("jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0")
     implementation("org.eclipse.persistence:org.eclipse.persistence.jpa:${properties["jpaVersion"]}")
     implementation("org.primefaces:primefaces:${properties["primefacesVersion"]}:jakarta")
     implementation("org.postgresql:postgresql:${properties["postgresqlVersion"]}")
