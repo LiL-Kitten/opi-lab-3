@@ -1,4 +1,4 @@
-import org.apache.tools.ant.filters.Native2AsciiFilter
+import org.apache.tools.ant.util.Native2AsciiUtils
 
 plugins {
     java
@@ -39,27 +39,18 @@ tasks.test {
 }
 
 ////native2ascii: конвертация ресурсов .properties в ASCII-формат
-//tasks.register<Copy>("native2ascii") {
-//    val native2ascii = Native2AsciiFilter()
-//    from("src/main/resources") {
-//        include("**/*.properties")
-//    }
-//    filter { line -> native2ascii.filter(line) }
-//    into("ascii_resources")
-//    doFirst { project.mkdir(project.file("ascii_resources")) }
-//}
-// native2ascii: конвертация ресурсов .properties в ASCII-формат
 tasks.register<Copy>("native2ascii") {
     from("src/main/resources") {
         include("**/*.properties")
-        filter(mapOf("encoding" to "UTF-8"), Native2AsciiFilter::class.java)
+        include("**/*.props")
     }
-    into("$buildDir/ascii_resources")
-    doFirst {
-        println("Converting properties files with native2ascii...")
-        mkdir("$buildDir/ascii_resources")
-    }
+
+    filter { line -> Native2AsciiUtils.native2ascii(line) }
+    into("ascii_resources")
+
+    doFirst { project.mkdir(project.file("ascii_resources")) }
 }
+
 
 
 
@@ -70,12 +61,12 @@ tasks.register<Copy>("native2ascii") {
 //        include("**/*.properties")
 //    }
 //}
-tasks.named<ProcessResources>("processResources") {
-    dependsOn("native2ascii")
-    from("$buildDir/ascii_resources") {
-        include("**/*.properties")
-    }
-}
+//tasks.named<ProcessResources>("processResources") {
+//    dependsOn("native2ascii")
+//    from("ascii_resources") {
+//        include("**/*.properties")
+//    }
+//}
 
 
 // build (включает compileJava и processResources, упаковывает в jar и затем report)

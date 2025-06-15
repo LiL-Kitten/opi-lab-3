@@ -11,6 +11,13 @@ http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
         </navigation-case>
     </navigation-rule>
 
+    <application>
+        <resource-bundle>
+            <base-name>messages</base-name>
+            <var>msg</var>
+        </resource-bundle>
+    </application>
+
     <navigation-rule>
         <from-view-id>/cringe.xhtml</from-view-id>
         <navigation-case>

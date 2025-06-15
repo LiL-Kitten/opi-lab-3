@@ -9,8 +9,10 @@
 
 <f:view>
     <h:body>
-        <h:panelGroup styleClass="fio">
-            Иевлев Ринат Андреевич номер группы: P3230 Вариант лабораторной: 121212
+        <h:panelGroup styleClass="fio" value="#{msg.authors}">
+            <h:outputText value="#{msg.authors}"/>
+            <br/> <br/>
+            <h:outputText value="#{msg.info}"/>
         </h:panelGroup>
 
         <h:panelGroup styleClass="main">
@@ -21,6 +23,7 @@
                 <h:commandLink action="#{navigate.goToCringe}" value="cringe"/>
             </h:form>
 
+            <h:outputText value="#{msg.greeting}"/>
         </h:panelGroup>
     </h:body>
 </f:view>
