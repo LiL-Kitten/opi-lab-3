@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3cb8f6c-b6c9-4557-9b52-b0b981253eab" name="Changes" comment="danielchik">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7202b28a-4152-43c8-ada8-149f32d67e36" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,70 +35,93 @@
       </state>
     </system>
   </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="LiL-Kitten &lt;r.ievlev123@mail.ru&gt;" />
+        <option value="Class" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;ddanielchik&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:LiL-Kitten/opi-lab-3.git&quot;,
-    &quot;accountId&quot;: &quot;a1a919b3-d21c-4597-b457-b54ddc92aa56&quot;
-  }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/trunk/src/main/webapp/error-pages/error.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2yVUvEcgLvJQnDmIrmO8o7IkAJr" />
+  <component name="ProjectId" id="2yVog0dYbsYwROMNFBmprWAOp83" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.opi-lab-3 [report].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Docker.Unnamed.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Gradle. [war].executor": "Run",
+    "Gradle.trunk [native2ascii].executor": "Run",
+    "Gradle.trunk [report].executor": "Run",
+    "Gradle.trunk [war].executor": "Run",
+    "JavaScript Debug.home.xhtml.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ddanielchik/Desktop/opi-lab-3",
+    "last_opened_file_path": "/Users/r/itmo/second/4sem/opi/opi-lab-3/trunk/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="gradle war" />
+      <command value="gradle native2ascii" />
       <command value="gradle report" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="opi-lab-3 [report]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.trunk [report]">
+    <configuration name="trunk [native2ascii]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="native2ascii" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="trunk [report]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,9 +143,50 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="trunk [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="war" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Unnamed" />
+      <item itemvalue="Gradle.trunk [report]" />
+      <item itemvalue="Gradle.trunk [native2ascii]" />
+      <item itemvalue="Gradle.trunk [war]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.opi-lab-3 [report]" />
+        <item itemvalue="Gradle.trunk [report]" />
+        <item itemvalue="Gradle.trunk [war]" />
+        <item itemvalue="Gradle.trunk [native2ascii]" />
       </list>
     </recent_temporary>
   </component>
@@ -136,140 +198,35 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="StructureViewState">
-    <option name="selectedTab" value="JSP" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3cb8f6c-b6c9-4557-9b52-b0b981253eab" name="Changes" comment="" />
-      <created>1749919463350</created>
+      <changelist id="7202b28a-4152-43c8-ada8-149f32d67e36" name="Changes" comment="" />
+      <created>1749929208210</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1749919463350</updated>
-      <workItem from="1749919464739" duration="207000" />
-      <workItem from="1749919694979" duration="6825000" />
-      <workItem from="1749928728058" duration="6477000" />
+      <updated>1749929208210</updated>
+      <workItem from="1749929209280" duration="2369000" />
+      <workItem from="1749988999216" duration="8244000" />
+      <workItem from="1750000950467" duration="18211000" />
+      <workItem from="1750028125733" duration="1543000" />
     </task>
-    <task id="LOCAL-00001" summary="last">
-      <option name="closed" value="true" />
-      <created>1749920103217</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1749920103217</updated>
-    </task>
-    <task id="LOCAL-00002" summary="opi">
-      <option name="closed" value="true" />
-      <created>1749922637030</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1749922637030</updated>
-    </task>
-    <task id="LOCAL-00003" summary="correct syntax">
-      <option name="closed" value="true" />
-      <created>1749922878823</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1749922878823</updated>
-    </task>
-    <task id="LOCAL-00004" summary="correct syntax">
-      <option name="closed" value="true" />
-      <created>1749924742055</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1749924742055</updated>
-    </task>
-    <task id="LOCAL-00005" summary="correct syntax">
-      <option name="closed" value="true" />
-      <created>1749924749069</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1749924749069</updated>
-    </task>
-    <task id="LOCAL-00006" summary="correct syntax">
-      <option name="closed" value="true" />
-      <created>1749924808681</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1749924808681</updated>
-    </task>
-    <task id="LOCAL-00007" summary="correct syntax">
-      <option name="closed" value="true" />
-      <created>1749928825748</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1749928825748</updated>
-    </task>
-    <task id="LOCAL-00008" summary="correct syntax">
-      <option name="closed" value="true" />
-      <created>1749928833116</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1749928833116</updated>
-    </task>
-    <task id="LOCAL-00009" summary="danielchik">
-      <option name="closed" value="true" />
-      <created>1749929868636</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1749929868636</updated>
-    </task>
-    <task id="LOCAL-00010" summary="danielchik">
-      <option name="closed" value="true" />
-      <created>1749930259143</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1749930259143</updated>
-    </task>
-    <task id="LOCAL-00011" summary="danielchik">
-      <option name="closed" value="true" />
-      <created>1749930724898</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1749930724898</updated>
-    </task>
-    <task id="LOCAL-00012" summary="danielchik">
-      <option name="closed" value="true" />
-      <created>1749930733281</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1749930733281</updated>
-    </task>
-    <task id="LOCAL-00013" summary="danielchik">
-      <option name="closed" value="true" />
-      <created>1749931056893</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1749931056893</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$USER_HOME$" />
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
-    <MESSAGE value="del" />
-    <MESSAGE value="last" />
-    <MESSAGE value="opi" />
-    <MESSAGE value="correct syntax" />
-    <MESSAGE value="danielchik" />
-    <option name="LAST_COMMIT_MESSAGE" value="danielchik" />
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.props" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
