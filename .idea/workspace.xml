@@ -58,6 +58,9 @@
     &quot;accountId&quot;: &quot;a1a919b3-d21c-4597-b457-b54ddc92aa56&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/trunk/src/main/webapp/error-pages/error.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -145,7 +148,7 @@
       <updated>1749919463350</updated>
       <workItem from="1749919464739" duration="207000" />
       <workItem from="1749919694979" duration="6825000" />
-      <workItem from="1749928728058" duration="1722000" />
+      <workItem from="1749928728058" duration="6477000" />
     </task>
     <task id="LOCAL-00001" summary="last">
       <option name="closed" value="true" />
@@ -227,7 +230,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749930259143</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="danielchik">
+      <option name="closed" value="true" />
+      <created>1749930724898</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749930724898</updated>
+    </task>
+    <task id="LOCAL-00012" summary="danielchik">
+      <option name="closed" value="true" />
+      <created>1749930733281</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749930733281</updated>
+    </task>
+    <task id="LOCAL-00013" summary="danielchik">
+      <option name="closed" value="true" />
+      <created>1749931056893</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749931056893</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

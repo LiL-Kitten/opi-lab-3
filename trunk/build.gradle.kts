@@ -20,6 +20,7 @@ java {
 }
 
 dependencies {
+    implementation("javax.servlet:jstl:1.2")
     implementation("org.eclipse.persistence:org.eclipse.persistence.jpa:${properties["jpaVersion"]}")
     implementation("org.primefaces:primefaces:${properties["primefacesVersion"]}:jakarta")
     implementation("org.postgresql:postgresql:${properties["postgresqlVersion"]}")
@@ -51,14 +52,12 @@ tasks.test {
 tasks.register<Copy>("native2ascii") {
     from("src/main/resources") {
         include("**/*.properties")
-        filter(
-            mapOf("encoding" to "UTF-8"),
-            Native2AsciiFilter::class.java
-        )
+        filter(mapOf("encoding" to "UTF-8"), Native2AsciiFilter::class.java)
     }
-    into("ascii_resources")
+    into("$buildDir/ascii_resources")
     doFirst {
-        project.mkdir("ascii_resources")
+        println("Converting properties files with native2ascii...")
+        mkdir("$buildDir/ascii_resources")
     }
 }
 
@@ -73,7 +72,7 @@ tasks.register<Copy>("native2ascii") {
 //}
 tasks.named<ProcessResources>("processResources") {
     dependsOn("native2ascii")
-    from("ascii_resources") {
+    from("$buildDir/ascii_resources") {
         include("**/*.properties")
     }
 }
